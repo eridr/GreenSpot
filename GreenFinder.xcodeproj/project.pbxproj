@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96C04D3D2663BD24002F1753 /* GreenFinder WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96C04D422663BD25002F1753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D412663BD25002F1753 /* Assets.xcassets */; };
+		96C04D492663BD25002F1753 /* GreenFinder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96C04D4E2663BD25002F1753 /* GreenFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D4D2663BD25002F1753 /* GreenFinderApp.swift */; };
+		96C04D502663BD25002F1753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D4F2663BD25002F1753 /* ContentView.swift */; };
+		96C04D522663BD25002F1753 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D512663BD25002F1753 /* NotificationController.swift */; };
+		96C04D542663BD25002F1753 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D532663BD25002F1753 /* NotificationView.swift */; };
+		96C04D562663BD25002F1753 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D552663BD25002F1753 /* ComplicationController.swift */; };
+		96C04D582663BD26002F1753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D572663BD26002F1753 /* Assets.xcassets */; };
+		96C04D5B2663BD26002F1753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D5A2663BD26002F1753 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96C04D3E2663BD24002F1753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96C04D322663BD24002F1753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96C04D3B2663BD24002F1753;
+			remoteInfo = "GreenFinder WatchKit App";
+		};
+		96C04D4A2663BD25002F1753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96C04D322663BD24002F1753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96C04D472663BD25002F1753;
+			remoteInfo = "GreenFinder WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96C04D632663BD26002F1753 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96C04D492663BD25002F1753 /* GreenFinder WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C04D672663BD26002F1753 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				96C04D3D2663BD24002F1753 /* GreenFinder WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96C04D382663BD24002F1753 /* GreenFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GreenFinder WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C04D412663BD25002F1753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96C04D432663BD25002F1753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GreenFinder WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C04D4D2663BD25002F1753 /* GreenFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFinderApp.swift; sourceTree = "<group>"; };
+		96C04D4F2663BD25002F1753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96C04D512663BD25002F1753 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		96C04D532663BD25002F1753 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		96C04D552663BD25002F1753 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		96C04D572663BD26002F1753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96C04D5A2663BD26002F1753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96C04D5C2663BD26002F1753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C04D5D2663BD26002F1753 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96C04D452663BD25002F1753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96C04D312663BD24002F1753 = {
+			isa = PBXGroup;
+			children = (
+				96C04D402663BD24002F1753 /* GreenFinder WatchKit App */,
+				96C04D4C2663BD25002F1753 /* GreenFinder WatchKit Extension */,
+				96C04D392663BD24002F1753 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96C04D392663BD24002F1753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96C04D382663BD24002F1753 /* GreenFinder.app */,
+				96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */,
+				96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C04D402663BD24002F1753 /* GreenFinder WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				96C04D412663BD25002F1753 /* Assets.xcassets */,
+				96C04D432663BD25002F1753 /* Info.plist */,
+			);
+			path = "GreenFinder WatchKit App";
+			sourceTree = "<group>";
+		};
+		96C04D4C2663BD25002F1753 /* GreenFinder WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96C04D4D2663BD25002F1753 /* GreenFinderApp.swift */,
+				96C04D4F2663BD25002F1753 /* ContentView.swift */,
+				96C04D512663BD25002F1753 /* NotificationController.swift */,
+				96C04D532663BD25002F1753 /* NotificationView.swift */,
+				96C04D552663BD25002F1753 /* ComplicationController.swift */,
+				96C04D572663BD26002F1753 /* Assets.xcassets */,
+				96C04D5C2663BD26002F1753 /* Info.plist */,
+				96C04D5D2663BD26002F1753 /* PushNotificationPayload.apns */,
+				96C04D592663BD26002F1753 /* Preview Content */,
+			);
+			path = "GreenFinder WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		96C04D592663BD26002F1753 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96C04D5A2663BD26002F1753 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C04D372663BD24002F1753 /* GreenFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C04D682663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder" */;
+			buildPhases = (
+				96C04D362663BD24002F1753 /* Resources */,
+				96C04D672663BD26002F1753 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96C04D3F2663BD24002F1753 /* PBXTargetDependency */,
+			);
+			name = GreenFinder;
+			productName = GreenFinder;
+			productReference = 96C04D382663BD24002F1753 /* GreenFinder.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		96C04D3B2663BD24002F1753 /* GreenFinder WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C04D642663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder WatchKit App" */;
+			buildPhases = (
+				96C04D3A2663BD24002F1753 /* Resources */,
+				96C04D632663BD26002F1753 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96C04D4B2663BD25002F1753 /* PBXTargetDependency */,
+			);
+			name = "GreenFinder WatchKit App";
+			productName = "GreenFinder WatchKit App";
+			productReference = 96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		96C04D472663BD25002F1753 /* GreenFinder WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C04D602663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder WatchKit Extension" */;
+			buildPhases = (
+				96C04D442663BD25002F1753 /* Sources */,
+				96C04D452663BD25002F1753 /* Frameworks */,
+				96C04D462663BD25002F1753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GreenFinder WatchKit Extension";
+			productName = "GreenFinder WatchKit Extension";
+			productReference = 96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C04D322663BD24002F1753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					96C04D372663BD24002F1753 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					96C04D3B2663BD24002F1753 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					96C04D472663BD25002F1753 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 96C04D352663BD24002F1753 /* Build configuration list for PBXProject "GreenFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96C04D312663BD24002F1753;
+			productRefGroup = 96C04D392663BD24002F1753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C04D372663BD24002F1753 /* GreenFinder */,
+				96C04D3B2663BD24002F1753 /* GreenFinder WatchKit App */,
+				96C04D472663BD25002F1753 /* GreenFinder WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96C04D362663BD24002F1753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C04D3A2663BD24002F1753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C04D422663BD25002F1753 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C04D462663BD25002F1753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C04D5B2663BD26002F1753 /* Preview Assets.xcassets in Resources */,
+				96C04D582663BD26002F1753 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C04D442663BD25002F1753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C04D522663BD25002F1753 /* NotificationController.swift in Sources */,
+				96C04D502663BD25002F1753 /* ContentView.swift in Sources */,
+				96C04D562663BD25002F1753 /* ComplicationController.swift in Sources */,
+				96C04D4E2663BD25002F1753 /* GreenFinderApp.swift in Sources */,
+				96C04D542663BD25002F1753 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96C04D3F2663BD24002F1753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96C04D3B2663BD24002F1753 /* GreenFinder WatchKit App */;
+			targetProxy = 96C04D3E2663BD24002F1753 /* PBXContainerItemProxy */;
+		};
+		96C04D4B2663BD25002F1753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96C04D472663BD25002F1753 /* GreenFinder WatchKit Extension */;
+			targetProxy = 96C04D4A2663BD25002F1753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		96C04D5E2663BD26002F1753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96C04D5F2663BD26002F1753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96C04D612663BD26002F1753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenFinder WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "GreenFinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		96C04D622663BD26002F1753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenFinder WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "GreenFinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		96C04D652663BD26002F1753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				IBSC_MODULE = GreenFinder_WatchKit_Extension;
+				INFOPLIST_FILE = "GreenFinder WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		96C04D662663BD26002F1753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				IBSC_MODULE = GreenFinder_WatchKit_Extension;
+				INFOPLIST_FILE = "GreenFinder WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		96C04D692663BD26002F1753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96C04D6A2663BD26002F1753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQK8U74N6L;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96C04D352663BD24002F1753 /* Build configuration list for PBXProject "GreenFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C04D5E2663BD26002F1753 /* Debug */,
+				96C04D5F2663BD26002F1753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C04D602663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C04D612663BD26002F1753 /* Debug */,
+				96C04D622663BD26002F1753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C04D642663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C04D652663BD26002F1753 /* Debug */,
+				96C04D662663BD26002F1753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C04D682663BD26002F1753 /* Build configuration list for PBXNativeTarget "GreenFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C04D692663BD26002F1753 /* Debug */,
+				96C04D6A2663BD26002F1753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C04D322663BD24002F1753 /* Project object */;
+}
