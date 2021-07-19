@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9612601A26A5F608002F14FF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9612601926A5F608002F14FF /* LocationManager.swift */; };
+		963216CE267608DA001E3690 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963216CD267608DA001E3690 /* Models.swift */; };
 		96C04D3D2663BD24002F1753 /* GreenFinder WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		96C04D422663BD25002F1753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D412663BD25002F1753 /* Assets.xcassets */; };
 		96C04D492663BD25002F1753 /* GreenFinder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9612601926A5F608002F14FF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		963216CD267608DA001E3690 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		96C04D382663BD24002F1753 /* GreenFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GreenFinder WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C04D412663BD25002F1753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9612601826A5F5ED002F14FF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9612601926A5F608002F14FF /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		96C04D312663BD24002F1753 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		96C04D4C2663BD25002F1753 /* GreenFinder WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9612601826A5F5ED002F14FF /* Managers */,
 				96C04D4D2663BD25002F1753 /* GreenFinderApp.swift */,
 				96C04D4F2663BD25002F1753 /* ContentView.swift */,
 				96C04D512663BD25002F1753 /* NotificationController.swift */,
@@ -129,6 +142,7 @@
 				96C04D5C2663BD26002F1753 /* Info.plist */,
 				96C04D5D2663BD26002F1753 /* PushNotificationPayload.apns */,
 				96C04D592663BD26002F1753 /* Preview Content */,
+				963216CD267608DA001E3690 /* Models.swift */,
 			);
 			path = "GreenFinder WatchKit Extension";
 			sourceTree = "<group>";
@@ -206,9 +220,11 @@
 				TargetAttributes = {
 					96C04D372663BD24002F1753 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					96C04D3B2663BD24002F1753 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					96C04D472663BD25002F1753 = {
 						CreatedOnToolsVersion = 12.5;
@@ -270,6 +286,8 @@
 				96C04D522663BD25002F1753 /* NotificationController.swift in Sources */,
 				96C04D502663BD25002F1753 /* ContentView.swift in Sources */,
 				96C04D562663BD25002F1753 /* ComplicationController.swift in Sources */,
+				9612601A26A5F608002F14FF /* LocationManager.swift in Sources */,
+				963216CE267608DA001E3690 /* Models.swift in Sources */,
 				96C04D4E2663BD25002F1753 /* GreenFinderApp.swift in Sources */,
 				96C04D542663BD25002F1753 /* NotificationView.swift in Sources */,
 			);
@@ -459,14 +477,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQK8U74N6L;
 				IBSC_MODULE = GreenFinder_WatchKit_Extension;
 				INFOPLIST_FILE = "GreenFinder WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.4;
@@ -479,10 +504,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQK8U74N6L;
 				IBSC_MODULE = GreenFinder_WatchKit_Extension;
 				INFOPLIST_FILE = "GreenFinder WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -496,12 +527,19 @@
 		96C04D692663BD26002F1753 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQK8U74N6L;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -509,9 +547,15 @@
 		96C04D6A2663BD26002F1753 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CQK8U74N6L;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreifaldt.GreenFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
