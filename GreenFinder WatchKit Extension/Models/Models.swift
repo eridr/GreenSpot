@@ -1,15 +1,9 @@
-//
-//  Models.swift
-//  GreenFinder WatchKit Extension
-//
-//  Created by Erik Dreifaldt on 2021-06-13.
-//
-
 import Foundation
 
 struct GolfClub: Identifiable {
     var id = UUID()
     var name:String
+    var image: String
     var golfCourse:[GolfCourse]
 }
 
