@@ -18,8 +18,8 @@ struct GolfClubs {
         GolfClub(name: "Lindö",
                  image: "lindo",
                  golfCourse:[
-                    GolfCourse(name: "Dal", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))]),
-                    GolfCourse(name: "Park", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))]),
+                    GolfCourse(name: "Dal", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.55227885291152, longitude: 18.025259436599000))]),
+                    GolfCourse(name: "Park", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.55228100254923,  longitude: 18.025258188397505)),Hole(hole: 2, location: Coordinates(latitude: 59.55105033119038,  longitude: 18.025055216743063)),Hole(hole: 3, location: Coordinates(latitude: 59.54965944286518,  longitude: 18.01996070261992)),Hole(hole: 4, location: Coordinates(latitude: 59.54634412127476,  longitude: 18.021891007038576)),Hole(hole: 5, location: Coordinates(latitude: 59.549435872124775,  longitude: 18.025571888710964)),Hole(hole: 6, location: Coordinates(latitude: 59.54791624421063, longitude: 18.02891559817675)),Hole(hole: 7, location: Coordinates(latitude: 59.55065734964045,  longitude: 18.027918237902895)),Hole(hole: 8, location: Coordinates(latitude: 59.55085572076324,  longitude: 18.02687786672904)),Hole(hole: 9, location: Coordinates(latitude: 59.55476079785827,  longitude: 18.02905208543916))]),
                     GolfCourse(name: "Äng", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))])
                  ]),
     ]

@@ -2,14 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Required to measure distance to green</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Required to position user</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>GreenFinder WatchKit Extension</string>
+	<string>Green Finder WatchKit Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -31,11 +27,15 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.dreifaldt.GreenFinder.watchkitapp</string>
+			<string>com.dreifaldt.greenkit.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Required to get your position</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Required to get your position</string>
 	<key>WKWatchOnly</key>
 	<true/>
 </dict>
