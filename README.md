@@ -1,2 +1,2 @@
 # GreenSpot
-### Apple watch app for golf courses.
+### Apple watch golf app.
