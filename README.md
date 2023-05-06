@@ -1,2 +1,3 @@
-# GreenSpot
+# GreenFinder
+
 ### Apple watch golf app.

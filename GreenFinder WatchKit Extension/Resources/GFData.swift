@@ -1,15 +1,15 @@
 struct GolfClubs {
     static var clubs = [
-        GolfClub(name: "Kungsängen",
-                 image: "kungsangen",
-                 golfCourse: [
-                    GolfCourse(name: "Kings", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))]),
-                    GolfCourse(name: "Queens", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))])]),
         GolfClub(name: "Bromma",
                  image: "bromma",
                  golfCourse:[
                     GolfCourse(name: "9-hål", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012)),Hole(hole: 2, location: Coordinates(latitude: 59.346849629935015, longitude: 17.93668424488087)),Hole(hole: 3, location: Coordinates(latitude: 59.34855543452431, longitude: 17.93607152900604)),Hole(hole: 4, location: Coordinates(latitude: 59.34955120991257, longitude: 17.937326556281842)),Hole(hole: 5, location: Coordinates(latitude: 59.35124583728915, longitude: 17.939270562872462)),Hole(hole: 6, location: Coordinates(latitude: 59.35076616875659, longitude: 17.942854591863693)),Hole(hole: 7, location: Coordinates(latitude: 59.350058124784205, longitude: 17.940997592601384)),Hole(hole: 8, location: Coordinates(latitude: 59.34957595950007, longitude: 17.93986720222403)),Hole(hole: 9, location: Coordinates(latitude: 59.34878815819401, longitude: 17.93661403656308))])
                  ]),
+        GolfClub(name: "Kungsängen",
+                 image: "kungsangen",
+                 golfCourse: [
+                    GolfCourse(name: "Kings", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.51955960995062, longitude: 17.718524510196502))]),
+                    GolfCourse(name: "Queens", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.52010185464994, longitude: 17.720366933600836))])]),
         GolfClub(name: "Lindesberg",
                  image: "lindegk",
                  golfCourse:[
@@ -21,6 +21,11 @@ struct GolfClubs {
                     GolfCourse(name: "Dal", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.55227885291152, longitude: 18.025259436599000))]),
                     GolfCourse(name: "Park", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.55228100254923,  longitude: 18.025258188397505)),Hole(hole: 2, location: Coordinates(latitude: 59.55105033119038,  longitude: 18.025055216743063)),Hole(hole: 3, location: Coordinates(latitude: 59.54965944286518,  longitude: 18.01996070261992)),Hole(hole: 4, location: Coordinates(latitude: 59.54634412127476,  longitude: 18.021891007038576)),Hole(hole: 5, location: Coordinates(latitude: 59.549435872124775,  longitude: 18.025571888710964)),Hole(hole: 6, location: Coordinates(latitude: 59.54791624421063, longitude: 18.02891559817675)),Hole(hole: 7, location: Coordinates(latitude: 59.55065734964045,  longitude: 18.027918237902895)),Hole(hole: 8, location: Coordinates(latitude: 59.55085572076324,  longitude: 18.02687786672904)),Hole(hole: 9, location: Coordinates(latitude: 59.55476079785827,  longitude: 18.02905208543916))]),
                     GolfCourse(name: "Äng", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.345737612222436, longitude: 17.93882603109012))])
+                 ]),
+        GolfClub(name: "Viksberg",
+                 image: "viksberg",
+                 golfCourse:[
+                    GolfCourse(name: "18-hål", holes: [Hole(hole: 1, location: Coordinates(latitude: 59.24516782167819, longitude: 17.625510772519537)),Hole(hole: 2, location: Coordinates(latitude: 59.24264914133461, longitude: 17.624938903216645)),Hole(hole: 3, location: Coordinates(latitude: 59.2468649818173, longitude: 17.61730247969684)),Hole(hole: 4, location: Coordinates(latitude: 59.24565583354623, longitude: 17.622304717858327)),Hole(hole: 5, location: Coordinates(latitude: 59.24505128709827, longitude: 17.624900484369252)),Hole(hole: 6, location: Coordinates(latitude: 59.24246891958239, longitude: 17.629473602402864)),Hole(hole: 7, location: Coordinates(latitude: 59.244119848859185, longitude: 17.628779609174142)),Hole(hole: 8, location: Coordinates(latitude: 59.24335537449511, longitude: 17.636500320634234)),Hole(hole: 9, location: Coordinates(latitude: 59.2445761867349, longitude: 17.633743636428044)),Hole(hole: 10, location: Coordinates(latitude: 59.24805932008279, longitude: 17.63232350794304)),Hole(hole: 11, location: Coordinates(latitude: 59.24843256482742, longitude: 17.625319378156384)),Hole(hole: 12, location: Coordinates(latitude: 59.24970187247253, longitude: 17.61647127178501)),Hole(hole: 13, location: Coordinates(latitude: 59.24847685685366, longitude: 17.623821584032342)),Hole(hole: 14, location: Coordinates(latitude: 59.248232529895304, longitude: 17.617722903019505)),Hole(hole: 15, location: Coordinates(latitude: 59.24682610463816, longitude: 17.624177982598546)),Hole(hole: 16, location: Coordinates(latitude: 59.24796911190582, longitude: 17.63120671561764)),Hole(hole: 17, location: Coordinates(latitude: 59.24715546406723, longitude: 17.62465909255302)),Hole(hole: 18, location: Coordinates(latitude: 59.24644174629337, longitude: 17.630316915029354))]),
                  ]),
     ]
 }

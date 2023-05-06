@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9612601A26A5F608002F14FF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9612601926A5F608002F14FF /* LocationManager.swift */; };
-		963216CE267608DA001E3690 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963216CD267608DA001E3690 /* Models.swift */; };
+		9612601A26A5F608002F14FF /* GFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9612601926A5F608002F14FF /* GFLocationManager.swift */; };
+		963216CE267608DA001E3690 /* GFModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963216CD267608DA001E3690 /* GFModels.swift */; };
 		96C04D3D2663BD24002F1753 /* GreenFinder WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		96C04D422663BD25002F1753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D412663BD25002F1753 /* Assets.xcassets */; };
 		96C04D492663BD25002F1753 /* GreenFinder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96C04D482663BD25002F1753 /* GreenFinder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -19,7 +19,7 @@
 		96C04D562663BD25002F1753 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C04D552663BD25002F1753 /* ComplicationController.swift */; };
 		96C04D582663BD26002F1753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D572663BD26002F1753 /* Assets.xcassets */; };
 		96C04D5B2663BD26002F1753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C04D5A2663BD26002F1753 /* Preview Assets.xcassets */; };
-		96DC3A8326A750B800476FBB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC3A8226A750B800476FBB /* Data.swift */; };
+		96DC3A8326A750B800476FBB /* GFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC3A8226A750B800476FBB /* GFData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9612601926A5F608002F14FF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		963216CD267608DA001E3690 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9612601926A5F608002F14FF /* GFLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLocationManager.swift; sourceTree = "<group>"; };
+		963216CD267608DA001E3690 /* GFModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFModels.swift; sourceTree = "<group>"; };
 		96C04D382663BD24002F1753 /* Green Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C04D3C2663BD24002F1753 /* GreenFinder WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GreenFinder WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C04D412663BD25002F1753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		96C04D5A2663BD26002F1753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96C04D5C2663BD26002F1753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C04D5D2663BD26002F1753 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		96DC3A8226A750B800476FBB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		96DC3A8226A750B800476FBB /* GFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		9612601826A5F5ED002F14FF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				9612601926A5F608002F14FF /* LocationManager.swift */,
+				9612601926A5F608002F14FF /* GFLocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 		96DC3A8026A74F7E00476FBB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				963216CD267608DA001E3690 /* Models.swift */,
+				963216CD267608DA001E3690 /* GFModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 		96DC3A8126A750A000476FBB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				96DC3A8226A750B800476FBB /* Data.swift */,
+				96DC3A8226A750B800476FBB /* GFData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -321,11 +321,11 @@
 				96C04D522663BD25002F1753 /* NotificationController.swift in Sources */,
 				96C04D502663BD25002F1753 /* ContentView.swift in Sources */,
 				96C04D562663BD25002F1753 /* ComplicationController.swift in Sources */,
-				9612601A26A5F608002F14FF /* LocationManager.swift in Sources */,
-				963216CE267608DA001E3690 /* Models.swift in Sources */,
+				9612601A26A5F608002F14FF /* GFLocationManager.swift in Sources */,
+				963216CE267608DA001E3690 /* GFModels.swift in Sources */,
 				96C04D4E2663BD25002F1753 /* GreenFinderApp.swift in Sources */,
 				96C04D542663BD25002F1753 /* NotificationView.swift in Sources */,
-				96DC3A8326A750B800476FBB /* Data.swift in Sources */,
+				96DC3A8326A750B800476FBB /* GFData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

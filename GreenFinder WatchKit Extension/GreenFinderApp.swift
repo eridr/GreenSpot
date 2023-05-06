@@ -12,10 +12,10 @@ struct GreenFinderApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ClubView()
+                GFCourse()
             }
         }
 
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+        // WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }

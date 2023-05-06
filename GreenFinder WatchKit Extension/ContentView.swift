@@ -2,7 +2,7 @@ import SwiftUI
 import CoreLocation
 import Combine
 
-struct ClubView: View {
+struct GFCourse: View {
     
     var golfClubs:[GolfClub] = GolfClubs.clubs
     
@@ -61,10 +61,20 @@ struct HoleOverview: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                Button("Score", action: {
+                    // Do something
+                })
+                .background(Color(red: 0 / 255, green: 84 / 255, blue: 70 / 255))
+                .clipShape(Circle())
+            }
+            Spacer()
             HStack{
                 Text("\(holeIndex+1): ").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Text("\(Int(round(distanceToGreen))) M").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }
+            Spacer()
             HStack{
                 Button("Back", action: {
                     if (holeIndex>0) { holeIndex -= 1 }
@@ -83,6 +93,6 @@ struct HoleOverview: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ClubView()
+        GFCourse()
     }
 }
