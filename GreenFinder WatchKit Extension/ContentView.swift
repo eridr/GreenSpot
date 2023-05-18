@@ -63,9 +63,9 @@ struct HoleOverview: View {
         VStack {
             HStack {
                 Spacer()
-                Button("Score", action: {
-                    // Do something
-                })
+                NavigationLink(destination: ScoreView()) {
+                    Text("Score")
+                }
                 .background(Color(red: 0 / 255, green: 84 / 255, blue: 70 / 255))
                 .clipShape(Circle())
             }
@@ -94,5 +94,11 @@ struct HoleOverview: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         GFCourse()
+    }
+}
+
+struct ScoreView: View {
+    var body: some View {
+        Text("Score")
     }
 }
